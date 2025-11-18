@@ -1,0 +1,166 @@
+@import "tailwindcss";
+@import 'leaflet/dist/leaflet.css';
+
+
+
+.p::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+body{
+/* background: linear-gradient(to right, #1c1c1c, #435146);  */
+background: rgb(202, 201, 191);
+}
+
+/* skill section */
+/* 
+        .skills-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 100vh;
+        }
+        .skills-section h2 {
+          font-size: 32px;
+          display: block !important;
+          color: burlywood;
+          margin-top: 20px;
+          text-align: center;
+        }
+        .skills-category {
+          margin-bottom: 20px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .skills-category h3 {
+          margin-bottom: 20px;
+          font-size: 29px;
+          color: rgba(0, 0, 0, 0.795);
+          border-bottom: 2px solid #251d96d7;
+          padding: 10px;
+          font-weight:500;
+          width: 65%;
+          text-align: center;
+          max-width: 800px;
+        }
+        .skills-container {
+          flex-wrap: wrap;
+          gap: 30px;
+          padding: 10px;
+          width: 100%;
+          max-width: 1000px;
+          justify-items: center;
+        }
+        .skill-item {
+          background: rgba(169, 170, 165, 0.719);
+          border-radius: 10px;
+          padding: 25px 20px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+          text-align: center;
+          transition: transform 0.3s ease;
+          width: 180px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .skill-item:hover {
+          transform: translateY(-5px);
+        }
+        .skill-progress {
+          width: 120px;
+          height: 120px;
+          margin-bottom: 15px;
+          position: relative;
+        }
+        .skill-progress svg {
+          width: 100%;
+          height: 100%;
+          transform: rotate(-90deg);
+        }
+        .skill-progress-bg {
+          fill: none;
+          stroke: #f0f0f0;
+          stroke-width: 8;
+        }
+        .skill-progress-fill {
+          fill: none;
+          stroke-width: 8;
+          stroke-linecap: round;
+          stroke-dasharray: 283;
+          stroke-dashoffset: 283;
+          transition: stroke-dashoffset 2s ease-in-out;
+        }
+        .skill-logo {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 70px;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background: white;
+        }
+        .skill-logo img {
+          max-width: 60%;
+          max-height: 60%;
+        }
+        .skill-name {
+          font-weight: 600;
+          margin-bottom: 5px;
+          color: #333;
+        }
+        .skill-percentage {
+          font-size: 14px;
+          color: #000000c9;
+        }
+
+        .html .skill-progress-fill { stroke: #E44D26; }
+        .css .skill-progress-fill { stroke: #264DE4; }
+        .js .skill-progress-fill { stroke: #F0DB4F; }
+        .bootstrap .skill-progress-fill { stroke: #7952B3; }
+        .tailwind .skill-progress-fill { stroke: #38B2AC; }
+        .react .skill-progress-fill { stroke: #61DAFB; }
+        .nodejs .skill-progress-fill { stroke: #68A063; }
+        .expressjs .skill-progress-fill { stroke: #000; }
+        .mongodb .skill-progress-fill { stroke: #4DB33D; }
+        .mysql .skill-progress-fill { stroke: #4479A1; }
+        .flutter .skill-progress-fill { stroke: #02569B; } */
+
+        
+/* Star style */
+.star {
+  position: absolute;
+  background: radial-gradient(circle, #ffffff, #00ffff, transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  animation: sparkle 1s ease-out forwards;
+  z-index: 1;
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5) translateY(-20px);
+    opacity: 0;
+  }
+}
